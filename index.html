@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css">
+
+</head>
+
+<body>
+    <section class="main">
+        <section class="mian-cards">
+            <!-- card  -->
+            <div class="card-body">
+                <div class="card-img "><img  loading="lazy" src="./img/istockphoto-1355262648-612x612.jpg" alt="...">
+                </div>
+                <div class="card-text">
+                    <div class="product-name" id="product-1">shoes nike white pich colour</div>
+                    <div class="brand"><span>brand :</span> nike</div>
+                    <div class="product-price"><span>$480</span></div>
+                    <div class="product-quantity">
+                        <div class="quntity">
+                            <span id="decrease"  ><i onclick="decrease('protuct-quantiy','total_price','product-1')" class="fa-solid fa-minus"></i></span>
+                            <span><input type="text" name="#" class="protuct-quantiy"  id="protuct-quantiy" value="0" maxlength="1"
+                                    readonly></span>
+                            <span id="increase" ><i onclick="increase('protuct-quantiy','total_price','product-1')" class="fa-solid fa-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="buy-btn">
+                        <button>buy</button>
+                    </div>
+                    <div class="total-price">
+                        <span>total price : </span>$<span id="total_price">0.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- card  -->
+            <!-- card  -->
+            <div class="card-body">
+                <div class="card-img"><img  loading="lazy" src="./img/c-d-x-PDX_a_82obo-unsplash.jpg" alt="..."></div>
+                <div class="card-text">
+                    <div class="product-name" id="product-2">headphones</div>
+                    <div class="brand"><span>brand :</span> sumsung</div>
+                    <div class="product-price"><span>$480</span></div>
+                    <div class="product-quantity">
+                        <div class="quntity">
+                            <span id="decrease"  ><i onclick="decrease('protuct-quantiy2','total_price2','product-2')" class="fa-solid fa-minus card-2-minus"></i></span>
+                            <span><input type="text" name="#" class="protuct-quantiy"  id="protuct-quantiy2"  value="0" maxlength="1"
+                                    readonly></span>
+                            <span id="increase" ><i onclick="increase('protuct-quantiy2','total_price2','product-2')"   class="fa-solid fa-plus card-2-plus"></i></span>
+                        </div>
+                    </div>
+
+                    <div class="buy-btn">
+                        <button>buy</button>
+                    </div>
+                    <div class="total-price">
+                        <span>total price : </span>$<span id="total_price2">0.00</span>
+                    </div>
+                </div>
+            </div>
+            <!-- card  -->
+        </section>
+        <!-- left-card -->
+        <section class="left-card">
+
+            <div class="total-price-card">
+                <div class="total-proice-head">
+                    <h2>total price</h2>
+                </div>
+
+                <div class="total-price-text">
+                    <div class="product-card">
+                        <div class="product-left"><span>total price</span></div>
+                        <div class="product-right">$<span id="initial-total">0.00</span></div>
+                        
+                    </div>
+                    <div class="product-list-head">
+                    <h2 c>product list</h2>
+                </div>
+                    <div class="product-list">
+                </div>
+                <div class="product-list2">
+                </div>
+                    
+                </div>
+<div class="final-price">
+    <div class="left"><h2>total price</h2></div>
+    <div class="right"><h2 >$ <span id="final_amt">0.00</span></h2></div>
+</div>
+<div class="payment-btn">
+    <button>pay</button>
+</div>
+            </div>
+        </section>
+
+    </section>
+</body>
+<script src="./app.js"></script>
+
+</html>
